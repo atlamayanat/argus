@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./input.css -o ./public/css/styles.css --watch",
     "deploy": "gh-pages -d public",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/*.html ./dist/ && cp ./.nojekyll ./dist/"
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/*.html ./dist/"
 
   },
   "repository": {

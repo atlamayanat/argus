@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx tailwindcss -i ./input.css -o ./public/css/styles.css --watch",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/*.html ./dist/ && cp ./.nojekyll ./dist/"
+
   },
   "repository": {
     "type": "git",

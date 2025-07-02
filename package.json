@@ -4,7 +4,8 @@
   "description": "argus team project",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./input.css -o ./public/css/styles.css --watch"
+    "watch": "npx tailwindcss -i ./input.css -o ./public/css/styles.css --watch",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/atlamayanat/argus/issues"
   },
-  "homepage": "https://github.com/atlamayanat/argus#readme"
+  "homepage": "https://github.com/atlamayanat/argus#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
